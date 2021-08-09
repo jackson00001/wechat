@@ -1,0 +1,20 @@
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+    check: false
+  protocol:
+    name: dubbo
+    port: 9002
+  monitor:
+    protocol: register
+  consumer:
+    check: false
+    timeout: 3000
+wechat:
+  appId: wx97ef6cd49a4125fe
+  appsecret: 2fddb64bcc094a37ce436ac1107bc38e
+server:
+  port: 9001
